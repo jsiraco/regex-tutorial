@@ -34,10 +34,13 @@ Quantifiers in regular expressions specify how many times a character, group of 
 
 
 ### Grouping Constructs
+Grouping Constructs symbolize a subexpression inside a regular expression. Done by using *paranthesis* ```  ( ) ```, Grouping Constructs allow more specific manipulations of a string by breaking it down into substrings. 
 
 ### Bracket Expressions
 
+
 ### Character Classes
+Character classes define characters or sets of characters in which a regular expression must or must not contain a match.
 
 ### The OR Operator
 

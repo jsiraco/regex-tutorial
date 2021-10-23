@@ -25,11 +25,13 @@ These patters can be used to manipualte strings in many ways such as finding cha
 ## Regex Components
 
 ### Anchors
-Anchors are a type of character that you can put into your Regular Expression that will denote something about the string or how the search pattern should be implemented. For example, there are anchors that allow you to look for a match at the end of a string or line ``` $ ```, the beginning ``` ^ ```, and more.
+Anchors are a type of character that specify something about the string or how the search pattern should be implemented. For example, there are anchors that allow you to look for a match at the end of a string or line ``` $ ```, the beginning ``` ^ ```, and more.
 
 Anchors do not have to be in a specific place in regex, and can be used multiple times in the same expression. For example, you can wirte and expression like 
 
 ### Quantifiers
+Quantifiers in regular expressions specify how many times a character, group of characters, or type of characters need to appear for there to be a match.  
+
 
 ### Grouping Constructs
 

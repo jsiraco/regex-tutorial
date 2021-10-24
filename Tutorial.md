@@ -25,24 +25,42 @@ These patters can be used to manipualte strings in many ways such as finding cha
 ## Regex Components
 
 ### Anchors
-Anchors are a type of character that specify something about the string or how the search pattern should be implemented. For example, there are anchors that allow you to look for a match at the end of a string or line ``` $ ```, the beginning ``` ^ ```, and more.
-
-Anchors do not have to be in a specific place in regex, and can be used multiple times in the same expression. For example, you can wirte and expression like 
+Anchors are a type of character that specify something about the string or how the search pattern should be implemented. 
+For example:
+``` $ ``` matches a charcater at the end of a line, while
+``` ^ ``` matches a character at the beginning of a line
 
 ### Quantifiers
 Quantifiers in regular expressions specify how many times a character, group of characters, or type of characters need to appear for there to be a match.  
+For example:
+``` * ``` allows you to match a string that is followed by zero or more of the character immediately before the ``` * ```
+``` + ``` allows you to match a string that is followed by one or more of the character immediately before the ``` + ```
+``` ? ``` allows you to match a string that is followed by zero or one of the character immediately before the ``` ? ```
+``` {} ``` allows you to match a string that is followed by the range of characters defined inside the ``` {} ```
 
 
 ### Grouping Constructs
 Grouping Constructs symbolize a subexpression inside a regular expression. Done by using *paranthesis* ```  ( ) ```, Grouping Constructs allow more specific manipulations of a string by breaking it down into substrings. 
+For example:
+```  ```
 
 ### Bracket Expressions
 
 
 ### Character Classes
 Character classes define characters or sets of characters in which a regular expression must or must not contain a match.
+``` \d ``` matches a numary character
+``` \w ``` matches a alphabetic character
+``` \s ``` matches a whitespace
+``` . ``` matches any character
 
 ### The OR Operator
+The Or Operator ``` |  or []``` is a logical operator you can put into you regex that will allow you to match with a string that contains a character defined by the operator. 
+For example:
+``` a (b|c) ```
+``` a [bc] ```
+This means that your regex will return a match if there is an ``` a ``` followed by either ``` b ``` or ``` c ```
+
 
 ### Flags
 

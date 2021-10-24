@@ -25,13 +25,13 @@ These patters can be used to manipualte strings in many ways such as finding cha
 ## Regex Components
 
 ### Anchors
-Anchors are a type of character that specify something about the string or how the search pattern should be implemented. 
+Anchors are a type of character that specify something about the string or how the search pattern should be implemented 
 For example:
 ``` $ ``` matches a charcater at the end of a line, while
 ``` ^ ``` matches a character at the beginning of a line
 
 ### Quantifiers
-Quantifiers in regular expressions specify how many times a character, group of characters, or type of characters need to appear for there to be a match.  
+Quantifiers in regular expressions specify how many times a character, group of characters, or type of characters need to appear for there to be a match  
 For example:
 ``` * ``` allows you to match a string that is followed by zero or more of the character immediately before the ``` * ```
 ``` + ``` allows you to match a string that is followed by one or more of the character immediately before the ``` + ```
@@ -47,13 +47,14 @@ For example:
 ``` 1(?<Dummy>23) ``` Names this group *Dummy*
 
 ### Bracket Expressions
-Bracket expressions allow characters to be grouped together inside brackets so that any character inside will return a match.
+Bracket expressions allow characters to be grouped together inside brackets so that any character inside will return a match
 For example:
 ``` [xyx] ``` will return a match if the string contains either an ``` x ```, ``` y ```, or ``` z ```
 
 
 ### Character Classes
 Character classes define characters or sets of characters in which a regular expression must or must not contain a match.
+For example:
 ``` \d ``` matches a numary character
 ``` \w ``` matches a alphabetic character
 ``` \s ``` matches a whitespace
@@ -67,6 +68,11 @@ For example:
 This means that your regex will return a match if there is an ``` a ``` followed by either ``` b ``` or ``` c ```
 
 ### Flags
+Flags are specials letters you can place at the end of your regex to denote a special way to handle the search.
+For example:
+Placing ```  i ``` at the end of the regex will ignore case-sensitivity ``` /jkL/i ``` will match ``` JKl ```
+Placing ```  g ``` at the end of the regex will not return after the first match is found
+Placing ``` m ``` at the end of the regex will allow ``` ^ ``` and ``` $ ``` to match at the end of a line, instead of a whole string
 
 ### Character Escapes
 

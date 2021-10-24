@@ -6,6 +6,40 @@ Developer.js Regex Tutorial
 Regex, or Regular Expression, is a sequence of characters that specifies a search pattern, 
 like  ` /[0-9a-z]/i `, which will look for every instance of numbers 0-9, and letters a-z, ignoring case sensitivity. Additionally, Regex isn't limited to a single language or development environment. From Python to Typescript, and Back-End to Front-End, Regex is a very powerful tool every developer should be familiar with.
 
+<br />The expression `/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/` will return a match to an HTML tag inside a string.
+
+#### First Group `([a-z]+)`
+* `^` asserts position at start of the string
+* `<` matches the character `<`
+* `([a-z]+)` 1st Capturing Group will match a single character present in [a-z]
+* `+` matches the previous token one or more times
+#### Second Group `([^<]+)*`
+* `([^<]+)*` 2nd Capturing Group will match a single character not present in [^<],  
+* `*` matches the previous token between zero or more, as many times as possible, 
+* `+` matches the previous token between one or moretimes, 
+* `<` matches the character `<` 
+#### Non-Group `(?:>(.*)<\/\1>|\s+\/>)`
+* Non-capturing group (?:>(.*)<\/\1>|\s+\/>)
+#### 1st Alternative `>(.*)<\/\1>`
+* `>` matches the character `>`
+#### 3rd Capturing Group `(.*)`
+* `.` matches any character
+* `*` matches the previous token between zero or more times
+* `<` matches the character `<` 
+* `\/` matches the character `/` 
+* `\1` matches the same text as most recently matched by the 1st capturing group
+* `>` matches the character `>` 
+#### 2nd Alternative `\s+\/>`
+* `\s` matches any whitespace character
+* `+` matches the previous token between one or more times
+* `\/` matches the character `/` 
+* `>` matches the character `>` 
+* `$` asserts position at the end of the string
+
+* `g` modifier: All matches
+* `i` modifier: Case insensitive match 
+
+
 These patters can be used to manipualte strings in many ways such as finding characters, replacing characters, validating user input, and more. Below you will find several of the components of a regular expression, as well as examples of each.
 
 ## Table of Contents

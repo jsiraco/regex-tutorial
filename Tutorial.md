@@ -42,9 +42,14 @@ For example:
 ### Grouping Constructs
 Grouping Constructs symbolize a subexpression inside a regular expression. Done by using *paranthesis* ```  ( ) ```, Grouping Constructs allow more specific manipulations of a string by breaking it down into substrings. 
 For example:
-```  ```
+``` 1(23) ``` Creates a group to match with ``` (23) ```
+``` 1(?:23)* ``` Disables this group from matching
+``` 1(?<Dummy>23) ``` Names this group *Dummy*
 
 ### Bracket Expressions
+Bracket expressions allow characters to be grouped together inside brackets so that any character inside will return a match.
+For example:
+``` [xyx] ``` will return a match if the string contains either an ``` x ```, ``` y ```, or ``` z ```
 
 
 ### Character Classes
@@ -60,7 +65,6 @@ For example:
 ``` a (b|c) ```
 ``` a [bc] ```
 This means that your regex will return a match if there is an ``` a ``` followed by either ``` b ``` or ``` c ```
-
 
 ### Flags
 

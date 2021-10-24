@@ -3,13 +3,10 @@
 Developer.js Regex Tutorial
 
 ## Summary
+Regex, or Regular Expression, is a sequence of characters that specifies a search pattern, 
+like  ` /[0-9a-z]/i `, which will look for every instance of numbers 0-9, and letters a-z, ignoring case sensitivity. Additionally, Regex isn't limited to a single language or development environment. From Python to Typescript, and Back-End to Front-End, Regex is a very powerful tool every developer should be familiar with.
 
-<!-- Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary. -->
-
-REGEX, or Regular Expression, is a sequence of characters that specifies a search pattern, 
-like  ` /[0-9a-z]/gi `, which will look for every instance of numbers 0-9, and letters a-z, ignoring case sensitivity.
-
-These patters can be used to manipualte strings in many ways such as finding characters, replacing characters, validating user input, and more. 
+These patters can be used to manipualte strings in many ways such as finding characters, replacing characters, validating user input, and more. Below you will find several of the components of a regular expression, as well as examples of each.
 
 ## Table of Contents
 
@@ -87,4 +84,5 @@ In addition to these, there are several other Character Escapes that are useful 
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Josef is a full-stack web developer currently enrolled in UNH's Coding Bootcamp. For contact information, please visit his Github *here* https://github.com/jsiraco
+
